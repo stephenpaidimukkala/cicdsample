@@ -14,8 +14,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<app.runtime>4.3.0-20210304</app.runtime>
-		<mule.maven.plugin.version>3.3.9</mule.maven.plugin.version> 
+		<app.runtime>4.3.0</app.runtime>
+		<mule.maven.plugin.version>${mule.maven.plugin.version}</mule.maven.plugin.version> 
 	</properties>
 
 	<build>
@@ -29,7 +29,7 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>3.3.9</version>
+				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				
 				<configuration>
@@ -50,14 +50,7 @@
 				</configuration>
 			</plugin>
 			
-			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
-				<extensions>true</extensions>
-				
-			</plugin>
-			
+						
 		</plugins>
 	</build>
 
